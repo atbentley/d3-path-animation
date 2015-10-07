@@ -1,0 +1,30 @@
+{
+  "name": "d3-path-animation",
+  "author": "Andrew Bentley",
+  "version": "0.0.1",
+  "description": "Simple, pausable and resumable path animations in D3.js",
+  "keywords": "D3 animation transition pause resume start stop",
+  "license": "MIT",
+  "index": "src/d3-path-animation.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/atbentley/d3-path-animation.git"
+  },
+  "browserify": {
+    "transform": [
+      [
+        "babelify",
+        {
+          "loose": "all"
+        }
+      ]
+    ]
+  },
+  "scripts": {
+    "build": "browserify src/d3-path-animation.js -s PathAnimation -o dist/d3-path-animation.js && minify dist/d3-path-animation.js"
+  },
+  "dependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0"
+  }
+}
