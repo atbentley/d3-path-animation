@@ -49,10 +49,10 @@ var PathAnimation = (function () {
   PathAnimation.prototype.start = function start(points, duration, tween) {
     this._points = points;
     this._duration = duration;
-    this._tween = tween;
+    this._tween = tween || this.tween();
     this._path = _createPath2['default'](this._points);
     this._moveToStart();
-    this._animate(tween);
+    this._animate(this._tween);
   };
 
   PathAnimation.prototype.pause = function pause() {
