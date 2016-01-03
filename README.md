@@ -18,7 +18,7 @@ var cicle = svg.append("circle").attr("r", 5);
 
 Create the animation object and kick off the animation:
 ```
-var animation = new D3PathAnimation(circle);
+var animation = new PathAnimation(circle);
 // start(points, duration)
 animation.start([[0, 0], [100, 0], [100, 100], [0, 100]], 3000);
 ```
